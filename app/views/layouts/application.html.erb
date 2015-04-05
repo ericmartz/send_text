@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SendText</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "default", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-inner">
+			<ul class="nav navbar-nav">
+				<a class="navbar-brand" href="#">Send a Message</a>
+  				<li role="presentation" class="active"><%= link_to "Contacts",  contacts_path %></li>
+  				<li role="presentation" class="active"><%= link_to "Messages",  messages_path %></li>
+  			</ul>
+		</div>
+	</nav>
+
+	<%= yield %>
+
+</body>
+</html>

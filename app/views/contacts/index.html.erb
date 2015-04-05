@@ -1,0 +1,12 @@
+<h1>Listing contacts</h1>
+<a class="btn btn-default" href="/contacts/new" role="button">New Contact</a>
+<hr>
+<% @contacts.each do |contact| %>
+    Name: <%= contact.name %><br>
+    Phone Number: <%= contact.phone_num %><br>
+    Carrier: <%= contact.carrier %><br>
+    Actions: <%= link_to 'Show', contact %> | 
+    <%= link_to 'Edit', edit_contact_path(contact) %> | 
+    <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <hr>
+<% end %>

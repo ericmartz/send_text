@@ -1,0 +1,10 @@
+<h1>Listing messages</h1>
+<a class="btn btn-default" href="/messages/new" role="button">New Message</a>
+<hr> 
+<% @messages.each do |message| %>
+    Message: <%= message.message_body %><br>
+    Actions: <%= link_to 'Show', message %> | 
+    <%= link_to 'Edit', edit_message_path(message) %> | 
+    <%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <hr>
+<% end %>
