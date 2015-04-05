@@ -7,6 +7,6 @@
     Carrier: <%= contact.carrier %><br>
     Actions: <%= link_to 'Show', contact %> | 
     <%= link_to 'Edit', edit_contact_path(contact) %> | 
-    <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' }  %>
     <hr>
 <% end %>
