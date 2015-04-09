@@ -28,7 +28,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        SendMessage.send_message(@message).deliver
+        SendMessage.prep_sender(@message)
         format.html { redirect_to @message, notice: 'Message was successfully created.' }
         format.json { render action: 'show', status: :created, location: @message }
       else
