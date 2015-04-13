@@ -15961,3 +15961,1909 @@ Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:02:14 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:02:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 16:20:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 215ms (Views: 187.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:53 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:53 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:20:53 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 16:20:55 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/contacts/5" for 127.0.0.1 at 2015-04-09 16:21:01 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"5"}
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 5]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 15ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 16:21:01 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:01 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:01 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:02 -0400
+
+
+Started DELETE "/contacts/7" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"7"}
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 9ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:05 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:05 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:05 -0400
+
+
+Started DELETE "/contacts/6" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"6"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 6]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:08 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:08 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:21:08 -0400
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-09 16:21:56 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (36.0ms)
+  Rendered contacts/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2015-04-09 16:22:17 -0400
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "contact"=>{"name"=>"Chris Wade-Russell", "phone_num"=>"6788490200", "carrier"=>"T-Mobile"}, "commit"=>"Create Contact"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "contacts" ("carrier", "created_at", "name", "phone_num", "updated_at") VALUES (?, ?, ?, ?, ?)  [["carrier", "T-Mobile"], ["created_at", Thu, 09 Apr 2015 20:22:17 UTC +00:00], ["name", "Chris Wade-Russell"], ["phone_num", 6788490200], ["updated_at", Thu, 09 Apr 2015 20:22:17 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/8
+Completed 302 Found in 13ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/contacts/8" for 127.0.0.1 at 2015-04-09 16:22:17 -0400
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered contacts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:17 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:22:18 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:23:28 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 31ms (Views: 23.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2015-04-09 16:23:29 -0400
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (2.0ms)
+  Rendered messages/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-09 16:23:56 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "message"=>{"message_body"=>"Hey, we're closed today."}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 09 Apr 2015 20:23:56 UTC +00:00], ["message_body", "Hey, we're closed today."], ["updated_at", Thu, 09 Apr 2015 20:23:56 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mContact Load (1.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered send_message/send_message.html.erb (1.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788590929@vtext.com (860.1ms)
+Date: Thu, 09 Apr 2015 16:23:56 -0400
+From: notifications@bankofgeorgia.com
+To: 6788590929@vtext.com
+Message-ID: <5526dfdce73f8_12501a0cb201864e@BOG082196.mail>
+Subject: Verizon Found
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5526dfdce02ae_12501a0cb2018528";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Hey, we're closed today.
+
+
+----==_mimepart_5526dfdce02ae_12501a0cb2018528
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Using message.text.erb:
+Hey, we're closed today.
+
+
+----==_mimepart_5526dfdce02ae_12501a0cb2018528
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Using message.html.erb</p>
+Hey, we&#39;re closed today.
+
+----==_mimepart_5526dfdce02ae_12501a0cb2018528--
+
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788490200@tmomail.net (681.1ms)
+Date: Thu, 09 Apr 2015 16:23:57 -0400
+From: notifications@bankofgeorgia.com
+To: 6788490200@tmomail.net
+Message-ID: <5526dfddc8438_12501a0cb20188ad@BOG082196.mail>
+Subject: AT&T Found
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5526dfddc68df_12501a0cb2018775";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Hey, we're closed today.
+
+
+----==_mimepart_5526dfddc68df_12501a0cb2018775
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Using message.text.erb:
+Hey, we're closed today.
+
+
+----==_mimepart_5526dfddc68df_12501a0cb2018775
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Using message.html.erb</p>
+Hey, we&#39;re closed today.
+
+----==_mimepart_5526dfddc68df_12501a0cb2018775--
+
+Redirected to http://localhost:3000/messages/59
+Completed 302 Found in 2078ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/messages/59" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "59"]]
+  Rendered messages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:59 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:59 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:23:59 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:24:57 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2015-04-09 16:24:58 -0400
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (1.0ms)
+  Rendered messages/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-09 16:25:40 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "message"=>{"message_body"=>"Due to the nature of the roads.  If anyone is stranded, please reply back to this message"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 09 Apr 2015 20:25:40 UTC +00:00], ["message_body", "Due to the nature of the roads.  If anyone is stranded, please reply back to this message"], ["updated_at", Thu, 09 Apr 2015 20:25:40 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788590929@vtext.com (727.1ms)
+Date: Thu, 09 Apr 2015 16:25:40 -0400
+From: notifications@bankofgeorgia.com
+To: 6788590929@vtext.com
+Message-ID: <5526e0444382c_12502ceb2b81909e@BOG082196.mail>
+Subject: Weather Update
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5526e044420bc_12502ceb2b81897c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Due to the nature of the roads.  If anyone is stranded, please reply
+ back to this message
+
+
+----==_mimepart_5526e044420bc_12502ceb2b81897c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Using message.text.erb:
+Due to the nature of the roads.  If anyone is stranded, please reply back to this message
+
+
+----==_mimepart_5526e044420bc_12502ceb2b81897c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Using message.html.erb</p>
+Due to the nature of the roads.  If anyone is stranded, please reply back to this message
+
+----==_mimepart_5526e044420bc_12502ceb2b81897c--
+
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788490200@tmomail.net (728.1ms)
+Date: Thu, 09 Apr 2015 16:25:41 -0400
+From: notifications@bankofgeorgia.com
+To: 6788490200@tmomail.net
+Message-ID: <5526e045b221_12502ceb2b819211@BOG082196.mail>
+Subject: Weather Update
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5526e04596c9_12502ceb2b81914b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Due to the nature of the roads.  If anyone is stranded, please reply
+ back to this message
+
+
+----==_mimepart_5526e04596c9_12502ceb2b81914b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Using message.text.erb:
+Due to the nature of the roads.  If anyone is stranded, please reply back to this message
+
+
+----==_mimepart_5526e04596c9_12502ceb2b81914b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Using message.html.erb</p>
+Due to the nature of the roads.  If anyone is stranded, please reply back to this message
+
+----==_mimepart_5526e04596c9_12502ceb2b81914b--
+
+Redirected to http://localhost:3000/messages/60
+Completed 302 Found in 1567ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/messages/60" for 127.0.0.1 at 2015-04-09 16:25:41 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "60"]]
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:41 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:41 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:25:42 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:27:09 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/messages/54" for 127.0.0.1 at 2015-04-09 16:27:14 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"54"}
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "54"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 54]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 12ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:27:14 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:14 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:15 -0400
+
+
+Started DELETE "/messages/55" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"55"}
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "55"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 55]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 7ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:27:18 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 16:27:41 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:38:59 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/messages/56" for 127.0.0.1 at 2015-04-09 16:39:10 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"56"}
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "56"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 56]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 7ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:39:10 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:10 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:10 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:10 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:11 -0400
+
+
+Started DELETE "/messages/57" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"57"}
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "57"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 57]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:13 -0400
+
+
+Started DELETE "/messages/58" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"58"}
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 58]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 14ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:16 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:16 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:16 -0400
+
+
+Started DELETE "/messages/59" for 127.0.0.1 at 2015-04-09 16:39:17 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"59"}
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "59"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 59]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:39:17 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:17 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:18 -0400
+
+
+Started DELETE "/messages/60" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pM/z1GUII6zfikZpYYPdoJ7d6RSc3CYtVb0V1w78Ioc=", "id"=>"60"}
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "60"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 60]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 10ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 16:39:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 18:48:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 325ms (Views: 291.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:36 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:36 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:48:36 -0400
+
+
+Started DELETE "/contacts/8" for 127.0.0.1 at 2015-04-09 18:49:30 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nvEbhsqDAdrvkHoJY/T+YCRZSsNc7Su+i+aD7LZTIlk=", "id"=>"8"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 8]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 18:49:30 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:30 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:49:31 -0400
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-09 18:49:32 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (30.0ms)
+  Rendered contacts/new.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvEbhsqDAdrvkHoJY/T+YCRZSsNc7Su+i+aD7LZTIlk=", "contact"=>{"name"=>"Kiera Martz", "phone_num"=>"7703166148", "carrier"=>"Verizon"}, "commit"=>"Create Contact"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "contacts" ("carrier", "created_at", "name", "phone_num", "updated_at") VALUES (?, ?, ?, ?, ?)  [["carrier", "Verizon"], ["created_at", Thu, 09 Apr 2015 22:50:12 UTC +00:00], ["name", "Kiera Martz"], ["phone_num", 7703166148], ["updated_at", Thu, 09 Apr 2015 22:50:12 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/9
+Completed 302 Found in 16ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/contacts/9" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered contacts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:12 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 18:50:17 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 18:50:22 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2015-04-09 18:50:26 -0400
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (5.0ms)
+  Rendered messages/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-09 18:50:39 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvEbhsqDAdrvkHoJY/T+YCRZSsNc7Su+i+aD7LZTIlk=", "message"=>{"message_body"=>"This is a test of the emergency notification shit...."}, "commit"=>"Create Message"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 09 Apr 2015 22:50:39 UTC +00:00], ["message_body", "This is a test of the emergency notification shit...."], ["updated_at", Thu, 09 Apr 2015 22:50:39 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered send_message/send_message.html.erb (1.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788590929@vtext.com (986.1ms)
+Date: Thu, 09 Apr 2015 18:50:40 -0400
+From: notifications@bankofgeorgia.com
+To: 6788590929@vtext.com
+Message-ID: <55270240293be_1a5c263d19892986@BOG082196.mail>
+Subject: Notification from The Bank of Georgia
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55270240268c5_1a5c263d19892815";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: This is a test of the emergency notification shit....
+
+
+----==_mimepart_55270240268c5_1a5c263d19892815
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a test of the emergency notification shit....
+
+
+----==_mimepart_55270240268c5_1a5c263d19892815
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a test of the emergency notification shit....
+
+----==_mimepart_55270240268c5_1a5c263d19892815--
+
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 7703166148@vtext.com (872.1ms)
+Date: Thu, 09 Apr 2015 18:50:41 -0400
+From: notifications@bankofgeorgia.com
+To: 7703166148@vtext.com
+Message-ID: <55270241293f7_1a5c263d198931fc@BOG082196.mail>
+Subject: Notification from The Bank of Georgia
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5527024127c87_1a5c263d19893097";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: This is a test of the emergency notification shit....
+
+
+----==_mimepart_5527024127c87_1a5c263d19893097
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a test of the emergency notification shit....
+
+
+----==_mimepart_5527024127c87_1a5c263d19893097
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a test of the emergency notification shit....
+
+----==_mimepart_5527024127c87_1a5c263d19893097--
+
+Redirected to http://localhost:3000/messages/61
+Completed 302 Found in 2466ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/messages/61" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "61"]]
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:50:42 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 18:51:05 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/9" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nvEbhsqDAdrvkHoJY/T+YCRZSsNc7Su+i+aD7LZTIlk=", "id"=>"9"}
+  [1m[36mContact Load (1.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:10 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:10 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:10 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 18:51:13 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/messages/61" for 127.0.0.1 at 2015-04-09 18:51:16 -0400
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nvEbhsqDAdrvkHoJY/T+YCRZSsNc7Su+i+aD7LZTIlk=", "id"=>"61"}
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "61"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 61]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 9ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-09 18:51:16 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:16 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:16 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 18:51:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-13 10:40:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 331ms (Views: 300.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (1.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 10:40:39 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-13 10:47:01 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-13 10:47:01 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-13 10:47:03 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-13 11:13:04 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (35.0ms)
+  Rendered contacts/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qlAwnYUMXuCrpGuOdfy/oAK9/e5LQ88bZzR8Y0I9wc=", "contact"=>{"name"=>"Joey Traylor", "phone_num"=>"4042454918", "carrier"=>"AT&T"}, "commit"=>"Create Contact"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO "contacts" ("carrier", "created_at", "name", "phone_num", "updated_at") VALUES (?, ?, ?, ?, ?)  [["carrier", "AT&T"], ["created_at", Mon, 13 Apr 2015 15:13:19 UTC +00:00], ["name", "Joey Traylor"], ["phone_num", 4042454918], ["updated_at", Mon, 13 Apr 2015 15:13:19 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/10
+Completed 302 Found in 17ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/contacts/10" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered contacts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:20 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:20 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:20 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-13 11:13:22 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2015-04-13 11:13:23 -0400
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (4.0ms)
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-13 11:13:29 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qlAwnYUMXuCrpGuOdfy/oAK9/e5LQ88bZzR8Y0I9wc=", "message"=>{"message_body"=>"Test"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 13 Apr 2015 15:13:29 UTC +00:00], ["message_body", "Test"], ["updated_at", Mon, 13 Apr 2015 15:13:29 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (0.0ms)
+
+Sent mail to 6788590929@vtext.com (881.1ms)
+Date: Mon, 13 Apr 2015 11:13:30 -0400
+From: notifications@bankofgeorgia.com
+To: 6788590929@vtext.com
+Message-ID: <552bdd1ad1d_267c2f5f7a016076@BOG082196.mail>
+Subject: Notification from The Bank of Georgia
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_552bdd19f207c_267c2f5f7a015940";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Test
+
+
+----==_mimepart_552bdd19f207c_267c2f5f7a015940
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Test
+
+
+----==_mimepart_552bdd19f207c_267c2f5f7a015940
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Test
+
+----==_mimepart_552bdd19f207c_267c2f5f7a015940--
+
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (1.0ms)
+
+Sent mail to 4042454918@txt.att.net (704.1ms)
+Date: Mon, 13 Apr 2015 11:13:30 -0400
+From: notifications@bankofgeorgia.com
+To: 4042454918@txt.att.net
+Message-ID: <552bdd1ae1351_267c2f5f7a0162b0@BOG082196.mail>
+Subject: Notification from The Bank of Georgia
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_552bdd1ade858_267c2f5f7a016127";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Test
+
+
+----==_mimepart_552bdd1ade858_267c2f5f7a016127
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Test
+
+
+----==_mimepart_552bdd1ade858_267c2f5f7a016127
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Test
+
+----==_mimepart_552bdd1ade858_267c2f5f7a016127--
+
+Redirected to http://localhost:3000/messages/62
+Completed 302 Found in 2200ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/messages/62" for 127.0.0.1 at 2015-04-13 11:13:31 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[35mMessage Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "62"]]
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:31 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 11:13:32 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-13 11:13:47 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-13 12:09:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 242ms (Views: 195.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:46 -0400
+
+
+Started DELETE "/contacts/10" for 127.0.0.1 at 2015-04-13 12:09:49 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0qlAwnYUMXuCrpGuOdfy/oAK9/e5LQ88bZzR8Y0I9wc=", "id"=>"10"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (20.0ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 10]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 29ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-13 12:09:49 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 12:09:50 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-13 12:09:51 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2015-04-13 12:09:52 -0400
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (19.0ms)
+  Rendered messages/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-13 12:10:04 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qlAwnYUMXuCrpGuOdfy/oAK9/e5LQ88bZzR8Y0I9wc=", "message"=>{"message_body"=>"Removed some global variables"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 13 Apr 2015 16:10:04 UTC +00:00], ["message_body", "Removed some global variables"], ["updated_at", Mon, 13 Apr 2015 16:10:04 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered send_message/send_message.html.erb (8.0ms)
+Completed 500 Internal Server Error in 463ms
+
+ActionView::Template::Error (undefined method `message_body' for nil:NilClass):
+    1: <%= @message.message_body %>
+  app/views/send_message/send_message.html.erb:1:in `_app_views_send_message_send_message_html_erb___379494138_55360860'
+  app/mailers/send_message.rb:19:in `send_message'
+  app/mailers/send_message.rb:14:in `block in prep_sender'
+  app/mailers/send_message.rb:6:in `prep_sender'
+  app/controllers/messages_controller.rb:31:in `block in create'
+  app/controllers/messages_controller.rb:29:in `create'
+
+
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2015-04-13 12:10:53 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qlAwnYUMXuCrpGuOdfy/oAK9/e5LQ88bZzR8Y0I9wc=", "message"=>{"message_body"=>"Removed some global variables"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "messages" ("created_at", "message_body", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 13 Apr 2015 16:10:54 UTC +00:00], ["message_body", "Removed some global variables"], ["updated_at", Mon, 13 Apr 2015 16:10:54 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered send_message/send_message.html.erb (0.0ms)
+  Rendered send_message/send_message.text.erb (1.0ms)
+
+Sent mail to 6788590929@vtext.com (993.2ms)
+Date: Mon, 13 Apr 2015 12:10:54 -0400
+From: notifications@bankofgeorgia.com
+To: 6788590929@vtext.com
+Message-ID: <552bea8e211e4_242024ffed0314b1@BOG082196.mail>
+Subject: Notification from The Bank of Georgia
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_552bea8e1db31_242024ffed031362";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+message: Removed some global variables
+
+
+----==_mimepart_552bea8e1db31_242024ffed031362
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Removed some global variables
+
+
+----==_mimepart_552bea8e1db31_242024ffed031362
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Removed some global variables
+
+----==_mimepart_552bea8e1db31_242024ffed031362--
+
+Redirected to http://localhost:3000/messages/64
+Completed 302 Found in 1072ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/messages/64" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", "64"]]
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-13 12:10:55 -0400
+
+
+Started GET "/messages" for 127.0.0.1 at 2015-04-13 12:11:25 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.0ms)
