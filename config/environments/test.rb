@@ -33,4 +33,11 @@ SendText::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtpout.secureserver.net',
+    port:                 80,
+    user_name:            'webmail@ericmartz.com',
+    password:             'f6yt!we40pnhj',
+    enable_starttls_auto: true  }
 end
