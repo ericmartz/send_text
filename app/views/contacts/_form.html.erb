@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :carrier %><br>
-    <%= f.text_field :carrier %>
+    <%= f.select :carrier, options_for_select(%w[Verizon AT&T Sprint T-Mobile MetroPCS Virgin Boost U.S. Cellular]) %>
   </div>
   <div class="actions">
     <%= f.submit %>

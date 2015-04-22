@@ -19521,3 +19521,348 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-20 12:57:19
 
 
 Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-20 12:57:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-21 20:25:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 375ms (Views: 343.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:20 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:20 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:20 -0400
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-21 20:25:23 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (61.2ms)
+  Rendered contacts/new.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 84ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DXlJ3I5ZCene17meqbJFSvXW2d8GkbQMuYSgVV9DcKk=", "contact"=>{"name"=>"Test Carrier With Menu", "phone_num"=>"7707849852", "carrier"=>"AT&T"}, "commit"=>"Create Contact"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "contacts" ("carrier", "created_at", "name", "phone_num", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["carrier", "AT&T"], ["created_at", Wed, 22 Apr 2015 00:25:47 UTC +00:00], ["name", "Test Carrier With Menu"], ["phone_num", 7707849852], ["updated_at", Wed, 22 Apr 2015 00:25:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts/19
+Completed 302 Found in 18ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/contacts/19" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  Rendered contacts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:48 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:48 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:25:48 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-21 20:25:51 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (15.6ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 31ms (Views: 15.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-21 20:25:53 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (0.0ms)
+  Rendered contacts/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2015-04-21 20:26:02 -0400
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DXlJ3I5ZCene17meqbJFSvXW2d8GkbQMuYSgVV9DcKk=", "contact"=>{"name"=>"TEst 3", "phone_num"=>"6457891234", "carrier"=>"Verizon"}, "commit"=>"Create Contact"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "contacts" ("carrier", "created_at", "name", "phone_num", "updated_at") VALUES (?, ?, ?, ?, ?)  [["carrier", "Verizon"], ["created_at", Wed, 22 Apr 2015 00:26:02 UTC +00:00], ["name", "TEst 3"], ["phone_num", 6457891234], ["updated_at", Wed, 22 Apr 2015 00:26:02 UTC +00:00]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/20
+Completed 302 Found in 10ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/contacts/20" for 127.0.0.1 at 2015-04-21 20:26:02 -0400
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered contacts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:02 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:03 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-21 20:26:05 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 31ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/contacts/19" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DXlJ3I5ZCene17meqbJFSvXW2d8GkbQMuYSgVV9DcKk=", "id"=>"19"}
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "19"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 19]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 13ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:17 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:17 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:17 -0400
+
+
+Started DELETE "/contacts/20" for 127.0.0.1 at 2015-04-21 20:26:19 -0400
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DXlJ3I5ZCene17meqbJFSvXW2d8GkbQMuYSgVV9DcKk=", "id"=>"20"}
+  [1m[36mContact Load (2.5ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 20]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 10ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-21 20:26:19 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:19 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:20 -0400
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-21 20:26:44 -0400
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2015-04-21 20:26:45 -0400
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (15.6ms)
+  Rendered contacts/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
