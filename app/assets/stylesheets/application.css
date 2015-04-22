@@ -13,3 +13,8 @@
  */
 
 body { padding-top: 70px; }
+
+.wrapper {
+	width: 95%;
+	margin: auto;
+}
