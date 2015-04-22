@@ -9,11 +9,11 @@
 <body>
 
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="navbar-inner">
+		<div class="container-fluid navbar-inner">
 			<ul class="nav navbar-nav">
 				<a class="navbar-brand" href="#">Send a Message</a>
-  				<li role="presentation" class="active"><%= link_to "Contacts",  contacts_path %></li>
-  				<li role="presentation" class="active"><%= link_to "Messages",  messages_path %></li>
+  				<li <%= "class=" + IsActivePage(contacts_path) %> ><%= link_to "Contacts",  contacts_path %></li>
+  				<li <%= "class=" + IsActivePage(messages_path) %> ><%= link_to "Messages",  messages_path %></li>
   			</ul>
 		</div>
 	</nav>
