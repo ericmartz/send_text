@@ -5,8 +5,8 @@
     Name: <%= contact.name %><br>
     Phone Number: <%= contact.phone_num %><br>
     Carrier: <%= contact.carrier %><br>
-    Actions: <%= link_to 'Show', contact %> | 
-    <%= link_to 'Edit', edit_contact_path(contact) %> | 
-    <%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' }  %>
+    Actions: <%= link_to ('<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>').html_safe, contact %>&nbsp&nbsp
+    <%= link_to ('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>').html_safe, edit_contact_path(contact) %>&nbsp
+    <%= link_to ('<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>').html_safe, contact, method: :delete, data: { confirm: 'Are you sure?' }  %>
     <hr>
 <% end %>
