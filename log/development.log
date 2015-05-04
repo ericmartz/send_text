@@ -25865,3 +25865,349 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 18:42:22 -0400
+Processing by ContactsController#index as HTML
+ERROR: compiling _app_views_contacts_index_html_erb__241539495_28297992 RAISED C:/Sites/send_text/app/views/contacts/index.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...pan>').html_safe, contact title: 'Open', rel: 'tooltip' );@o...
+...                               ^
+C:/Sites/send_text/app/views/contacts/index.html.erb:8: syntax error, unexpected ',', expecting ')'
+...ml_safe, contact title: 'Open', rel: 'tooltip' );@output_buf...
+...                               ^
+Function body:           def _app_views_contacts_index_html_erb__241539495_28297992(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "contacts/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing contacts</h1>
+<a class="btn btn-default" href="/contacts/new" role="button">New Contact</a>
+<hr>
+'; @contacts.each do |contact| 
+@output_buffer.safe_append='    Name: ';@output_buffer.append=( contact.name );@output_buffer.safe_append='<br>
+    Phone Number: ';@output_buffer.append=( number_to_phone(contact.phone_num) );@output_buffer.safe_append='<br>
+    Carrier: ';@output_buffer.append=( contact.carrier );@output_buffer.safe_append='<br>
+    Actions: ';@output_buffer.append=( link_to ('<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>').html_safe, contact title: 'Open', rel: 'tooltip' );@output_buffer.safe_append='&nbsp&nbsp
+    ';@output_buffer.append=( link_to ('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>').html_safe, edit_contact_path(contact) );@output_buffer.safe_append='&nbsp
+    ';@output_buffer.append=( link_to ('<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>').html_safe, contact, method: :delete, data: { confirm: 'Are you sure?' }  );@output_buffer.safe_append='
+    <hr>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:413:in `_run__396328207__process_action__callbacks'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__194126637__call__callbacks'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered contacts/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (C:/Sites/send_text/app/views/contacts/index.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...pan>').html_safe, contact title: 'Open', rel: 'tooltip' );@o...
+...                               ^
+C:/Sites/send_text/app/views/contacts/index.html.erb:8: syntax error, unexpected ',', expecting ')'
+...ml_safe, contact title: 'Open', rel: 'tooltip' );@output_buf...
+...                               ^):
+     5:     Name: <%= contact.name %><br>
+     6:     Phone Number: <%= number_to_phone(contact.phone_num) %><br>
+     7:     Carrier: <%= contact.carrier %><br>
+     8:     Actions: <%= link_to ('<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>').html_safe, contact title: 'Open', rel: 'tooltip' %>&nbsp&nbsp
+     9:     <%= link_to ('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>').html_safe, edit_contact_path(contact) %>&nbsp
+    10:     <%= link_to ('<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>').html_safe, contact, method: :delete, data: { confirm: 'Are you sure?' }  %>
+    11:     <hr>
+  actionpack (4.0.1) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.1) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.1) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.1) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.1) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.1) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:413:in `_run__396328207__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__194126637__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Rails/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Rails/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:42:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-05-04 18:42:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:24 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:25 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 18:43:25 -0400
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-05-04 18:43:25 -0400
