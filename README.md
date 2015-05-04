@@ -9,5 +9,7 @@ To-do List
 - Add tool-tips to glyphicons on Contact page
 - Add groups to contacts
 
+
 Completed:
 - Turn Carrier field into a menu
+- Use number_to_phone helper to display phone number

@@ -25811,3 +25811,57 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-23 20:37:13
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-04-23 20:37:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 18:38:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.0ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 372ms (Views: 342.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-05-04 18:38:06 -0400
