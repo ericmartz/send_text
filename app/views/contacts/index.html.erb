@@ -3,7 +3,7 @@
 <hr>
 <% @contacts.each do |contact| %>
     Name: <%= contact.name %><br>
-    Phone Number: <%= contact.phone_num %><br>
+    Phone Number: <%= number_to_phone(contact.phone_num) %><br>
     Carrier: <%= contact.carrier %><br>
     Actions: <%= link_to ('<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>').html_safe, contact %>&nbsp&nbsp
     <%= link_to ('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>').html_safe, edit_contact_path(contact) %>&nbsp
